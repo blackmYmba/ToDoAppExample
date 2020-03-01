@@ -61,7 +61,7 @@ const App = () => {
           placeholder="Введите новое задание..."
           value={todoTitle}
           onChangeText={(e) => setTodoTitle(e)}
-          onEndEditing={addTodo}
+          onSubmitEditing={addTodo}
           containerStyle={styles.input}
           returnKeyType="done"
           rightIcon={{
