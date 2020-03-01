@@ -4,7 +4,6 @@ import { ListItem, CheckBox } from 'react-native-elements';
 import { Context } from '../context';
 
 export const TodoItem = ({ item }) => {
-
   const { dispatch, showCompleted } = useContext(Context);
   if (!showCompleted && item.completed) {
     return null;
@@ -40,22 +39,22 @@ export const TodoItem = ({ item }) => {
 
 const styles = StyleSheet.create({
   checkBoxContainer: {
-    padding: 0,
-    margin: 0
+    margin: 0,
+    padding: 0
   },
   toDoItem: {
     backgroundColor: '#E8E8E8',
+    borderRadius: 5,
     marginBottom: 5,
-    borderRadius: 5
   },
   toDoTitle: {
     fontSize: 16
   },
   toDoTitleDone: {
+    color: 'green',
     fontSize: 16,
-    textDecorationLine: 'line-through',
     textDecorationColor: 'green',
-    color: 'green'
+    textDecorationLine: 'line-through'
   }
 });
 
