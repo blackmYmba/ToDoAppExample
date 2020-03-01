@@ -64,6 +64,12 @@ const App = () => {
           onEndEditing={addTodo}
           containerStyle={styles.input}
           returnKeyType="done"
+          rightIcon={{
+            type: 'material',
+            name: 'add-circle',
+            color: 'green',
+            onPress: () => addTodo()
+          }}
         />
         {state && state.length ? (
           <CheckBox
