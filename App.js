@@ -61,7 +61,7 @@ const App = () => {
           placeholder="Введите новое задание..."
           value={todoTitle}
           onChangeText={(e) => setTodoTitle(e)}
-          onSubmitEditing={addTodo}
+          onEndEditing={addTodo}
           containerStyle={styles.input}
           returnKeyType="done"
         />
@@ -85,8 +85,7 @@ const App = () => {
 const styles = StyleSheet.create({
   checkBoxContainer: {
     backgroundColor: '#ffffff',
-    borderWidth: 0,
-    textAlign: 'right'
+    borderWidth: 0
   },
   container: {
     padding: 10
@@ -94,7 +93,7 @@ const styles = StyleSheet.create({
   headerTitle: {
     fontSize: 20,
     marginBottom: 15,
-    textAlign: 'center',
+    textAlign: 'center'
   },
   input: {
     marginBottom: 15
