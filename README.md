@@ -14,3 +14,5 @@ for Android:
 
 3) ToDoAppExample > android > local.properties (поменять строчку на путь до своего sdk) 
 4) react-native run-android
+
+Приложение должно запуститься на эмуляторе и работать
